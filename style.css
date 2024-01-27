@@ -1,0 +1,177 @@
+body{
+	font-family: 'Epilogue', sans-serif;
+	cursor: default;
+}
+
+#navbar{
+	display: flex;
+	justify-content: space-between;
+	margin: 25px;
+}
+
+#navbar a{
+	cursor: pointer;
+}
+
+.navbarFP{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dropbtn{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	width: 100px;
+	color: hsl(0, 0%, 41%);
+	font-weight: bold;
+}
+
+.dropbtn:hover{
+	color: hsl(0, 0%, 8%);
+}
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+	color: hsl(0, 0%, 41%);
+	font-weight: bold;
+}
+
+.dropdown-content-first{
+	border-radius: 15px;
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 130px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	padding: 14px;
+	right: 0;
+}
+
+.dropdown-content-second{
+	border-radius: 15px;
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 120px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	padding: 14px;
+	right: 1;
+}
+
+.dropdown-content-first a{
+	margin: 5px 0 -5px 0;
+}
+
+.dropdown-content-second a{
+	margin: 5px;
+}
+
+.dropdown-content-first img{
+	margin-right: 15px;
+}
+
+.dropdown-content-first a:hover{
+	color: hsl(0, 0%, 8%);
+}
+
+.dropdown-content-second a:hover{
+	color: hsl(0, 0%, 8%);
+}
+
+.dropdown:hover .dropdown-content-first{
+	display: flex;
+	flex-direction: column;
+}
+
+.dropdown:hover .dropdown-content-second{
+	display: flex;
+	flex-direction: column;
+}
+
+.btn{
+	border-style: none;
+	background-color: transparent;
+	padding: 16px;
+	color: hsl(0, 0%, 41%);
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btn:hover{
+	color: hsl(0, 0%, 8%);
+}
+
+.regbtn{
+	background-color: transparent;
+	padding: 16px;
+	border-radius: 15px;
+	border-width: 3px;
+	border-color: hsl(0, 0%, 41%);
+	color: hsl(0, 0%, 41%);
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.regbtn:hover{
+	color: hsl(0, 0%, 8%);
+	border-color: hsl(0, 0%, 8%);
+}
+
+#main-content{
+	display: grid;
+	grid-template-columns: 60% auto;
+	grid-template-rows: 85% auto;
+	margin: 2% 10% 2% 10%;
+	gap: 50px 100px;
+}
+
+.main-content h1{
+	font-size: 100px;
+	margin-bottom: 5%;
+}
+.main-content p{
+	line-height: 25px;
+	margin-bottom: 5%;
+	width: 70%;
+}
+
+.morebtn{
+	background-color: black;
+	padding: 16px;
+	border-radius: 15px;
+	border-width: 1px;
+	color: white;
+	font-weight: bold;
+}
+
+.morebtn:hover{
+	background-color: transparent;
+	padding: 16px;
+	border-radius: 15px;
+	border-width: 1px;
+	color: black;
+}
+
+.mainImg{
+	grid-row: span 2;
+}
+
+.mainImg img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.sponsors{
+	display: flex;
+	justify-content: space-between;
+}
+
+.sponsors img{
+	height: 100%;
+}
